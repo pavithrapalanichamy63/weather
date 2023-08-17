@@ -1,0 +1,19 @@
+<div class="background"></div>
+<div class="content">
+<h2 class="headline">Weather Information</h2>
+<div class="input-align">
+    <input type="text" [(ngModel)]="cityName" class="input-field" placeholder="Enter city name....">
+  </div>
+  <div>
+    <button class="btn-align" (click)="getWeather()">Get Weather</button>
+    <button *ngIf="show" class="clear" (click)="clearData()">Clear</button>
+  </div>
+  </div>
+
+  <div *ngIf="show" class="details-align">
+    <p *ngIf="weather.main">City: {{ weather.name }}</p>
+    <p *ngIf="weather.main">Temperature: {{ weather.main.temp }}°C</p>
+    <p *ngIf="!!weatherObj">Description: {{ weatherObj}}</p>
+  </div>
+
+  
