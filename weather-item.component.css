@@ -42,11 +42,12 @@
 }
 .details-align{
   position: absolute;
-  top: 62%;
-  left: 52%;
+  top: 75%;
+  left: 53%;
   transform: translate(-50%, -50%);
   background-color: #98eaeb;
-  padding: 52px
+  padding: 52px;
+  display: flex;
 }
 .clear{
   position: absolute;
@@ -63,6 +64,20 @@
 .clear:hover{
   background-color: rgb(243, 197, 29);
 }
+.right-align{
+  padding-left: 86px;
+}
+.weather-content{
+  margin-bottom: 28px;
+}
+.label-align{
+  font-size: 18px;
+  font-weight: 600;
+}
+.para{
+  color: #0400fffc;
+}
+
 @media (max-width: 768px) {
   .content {
     top: 22%;
@@ -85,8 +100,8 @@
   }
 
   .details-align {
-    top: 62%;
-    padding: 20px;
-    left: 47%;
+    top: 75%;
+    left: 52%;
+    padding: 40px;
   }
 }
