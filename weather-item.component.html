@@ -10,10 +10,39 @@
   </div>
   </div>
 
-  <div *ngIf="show" class="details-align">
-    <p *ngIf="weather.main">City: {{ weather.name }}</p>
-    <p *ngIf="weather.main">Temperature: {{ weather.main.temp }}°C</p>
-    <p *ngIf="!!weatherObj">Description: {{ weatherObj}}</p>
+  <div *ngIf="show" class="details-align col-md-12 d-flex">
+    <div class="col-md-6">
+    <div class="weather-content">
+      <label class="label-align" *ngIf="weather.main">City</label>
+      <p class="para">{{ weather.name }} </p>
+    </div>
+    <div class="weather-content">
+      <label class="label-align" *ngIf="weather.main">Temperature</label>
+      <p class="para">{{ weather.main.temp }}°C</p>
+    </div>
+    <div class="weather-content">
+      <label class="label-align" *ngIf="weather.main">Speed</label>
+      <p class="para">{{ weather.wind.speed}} km/h</p>
+    </div>
+    <div class="weather-content">
+      <label class="label-align" *ngIf="weather.main">Air Pressure</label>
+      <p class="para">{{ weather.main.pressure}} hPa</p>
+    </div>
+  </div>
+  <div class="col-md-6 right-align">
+    <div class="weather-content">
+      <label class="label-align" *ngIf="!!weatherObj">Weather</label>
+      <p class="para">{{weatherObj}}</p>
+    </div>
+    <div class="weather-content">
+      <label class="label-align" *ngIf="weather.main">Humidity</label>
+      <p class="para">{{ weather.main.humidity}}%</p>
+    </div>
+    <div class="weather-content">
+      <label class="label-align" *ngIf="weather.main">Feels like</label>
+      <p class="para">{{ weather.main.feels_like }}°C</p>
+    </div>
+  </div>
   </div>
 
   
