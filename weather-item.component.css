@@ -42,11 +42,11 @@
 }
 .details-align{
   position: absolute;
-    top: 58%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    background-color: #98eaeb;
-    padding: 42px
+  top: 62%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  background-color: #98eaeb;
+  padding: 52px
 }
 .clear{
   position: absolute;
@@ -62,4 +62,31 @@
 }
 .clear:hover{
   background-color: rgb(243, 197, 29);
+}
+@media (max-width: 768px) {
+  .content {
+    top: 22%;
+  }
+
+  .headline {
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .input-align {
+    margin-left: 20px;
+  }
+
+  .btn-align,
+  .clear {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .details-align {
+    top: 62%;
+    padding: 20px;
+    left: 47%;
+  }
 }
